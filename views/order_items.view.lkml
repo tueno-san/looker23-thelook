@@ -9,35 +9,35 @@ view: order_items {
     sql: ${TABLE}.id ;;
   }
 
-  dimension_group: _partitiondate {
-    type: time
-    timeframes: [
-      raw,
-      date,
-      week,
-      month,
-      quarter,
-      year
-    ]
-    convert_tz: no
-    datatype: date
-    sql: ${TABLE}._PARTITIONDATE ;;
-  }
+  # dimension_group: _partitiondate {
+  #   type: time
+  #   timeframes: [
+  #     raw,
+  #     date,
+  #     week,
+  #     month,
+  #     quarter,
+  #     year
+  #   ]
+  #   convert_tz: no
+  #   datatype: date
+  #   sql: ${TABLE}._PARTITIONDATE ;;
+  # }
 
-  dimension_group: _partitiontime {
-    type: time
-    timeframes: [
-      raw,
-      date,
-      week,
-      month,
-      quarter,
-      year
-    ]
-    convert_tz: no
-    datatype: date
-    sql: ${TABLE}._PARTITIONTIME ;;
-  }
+  # dimension_group: _partitiontime {
+  #   type: time
+  #   timeframes: [
+  #     raw,
+  #     date,
+  #     week,
+  #     month,
+  #     quarter,
+  #     year
+  #   ]
+  #   convert_tz: no
+  #   datatype: date
+  #   sql: ${TABLE}._PARTITIONTIME ;;
+  # }
 
   dimension_group: created {
     type: time
