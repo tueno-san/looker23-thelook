@@ -7,7 +7,7 @@
   preferred_slug: mKS61uNElW0sWFSEAz3Oq7
   elements:
   - title: New Tile
-    name: New Tile
+    name: New Tile2
     model: thelook
     explore: order_items
     type: looker_column
