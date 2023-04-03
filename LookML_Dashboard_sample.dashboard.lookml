@@ -6,7 +6,7 @@
   description: ''
   preferred_slug: mKS61uNElW0sWFSEAz3Oq7
   elements:
-  - title: New Tile
+  - title: New Tile2
     name: New Tile2
     model: thelook
     explore: order_items
