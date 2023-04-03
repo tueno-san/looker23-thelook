@@ -18,7 +18,7 @@
     col:
     width:
     height:
-  - title: New Tile
+  - title: New Tile2
     name: New Tile
     model: thelook
     explore: order_items
