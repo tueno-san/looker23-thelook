@@ -79,6 +79,7 @@ view: order_items {
   dimension: order_id {
     type: number
     sql: ${TABLE}.order_id ;;
+    drill_fields: [inventory_item_id]
   }
 
   dimension_group: returned {
@@ -136,6 +137,11 @@ view: order_items {
   measure: total_revenue {
     type: sum
     sql: ${sale_price} ;;
+    link: {
+      label: "link"
+      url: "www.google.com"
+    }
+    drill_fields: [detail*]
   }
 
   # ----- Sets of fields for drilling ------

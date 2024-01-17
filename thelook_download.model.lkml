@@ -10,6 +10,7 @@ datagroup: thelook {
 }
 
 explore: order_items {
+  label: "Can Download"
   # label: "{%%}"
   persist_with: thelook
   join: inventory_items {
