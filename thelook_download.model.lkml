@@ -9,18 +9,19 @@ datagroup: thelook {
   sql_trigger: select current_date() ;;
 }
 
-explore: order_items {
+explore: order_items_download {
+  from: order_items
   label: "Can Download"
   # label: "{%%}"
   persist_with: thelook
   join: inventory_items {
     type: left_outer
-    sql_on: ${inventory_items.id} = ${order_items.inventory_item_id};;
+    sql_on: ${inventory_items.id} = ${order_items_download.inventory_item_id};;
     relationship: many_to_one
   }
   join: users {
     type: left_outer
-    sql_on: ${users.id} = ${order_items.user_id} ;;
+    sql_on: ${users.id} = ${order_items_download.user_id} ;;
     relationship: many_to_one
   }
 }
