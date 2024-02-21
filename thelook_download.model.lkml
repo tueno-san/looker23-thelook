@@ -9,6 +9,11 @@ datagroup: thelook {
   sql_trigger: select current_date() ;;
 }
 
+access_grant: access_grant_test {
+  user_attribute: access_grant_test
+  allowed_values: ["0001"]
+}
+
 explore: order_items_download {
   from: order_items
   label: "Can Download"

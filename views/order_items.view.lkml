@@ -52,6 +52,7 @@ view: order_items {
       year
     ]
     sql: ${TABLE}.created_at ;;
+    required_access_grants: [access_grant_test]
   }
 
   dimension_group: delivered {
