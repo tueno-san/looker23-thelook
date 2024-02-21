@@ -52,7 +52,6 @@ view: order_items {
       year
     ]
     sql: ${TABLE}.created_at ;;
-    required_access_grants: [access_grant_test]
   }
 
   dimension_group: delivered {
@@ -75,6 +74,7 @@ view: order_items {
     type: number
     # hidden: yes
     sql: ${TABLE}.inventory_item_id ;;
+    required_access_grants: [access_grant_test]
   }
 
   dimension: order_id {
